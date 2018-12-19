@@ -16,8 +16,10 @@ namespace WebApplication1
             {
                 names.Add("John Doe" + i.ToString());
             }
-            CustomersGridView.DataSource = names;
-            CustomersGridView.DataBind();
+            //CustomersGridView.DataSource = names;
+            //CustomersGridView.DataBind();
+            CustomersList.DataSource = names;
+            CustomersList.DataBind();
         }
     }
 }
