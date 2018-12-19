@@ -17,5 +17,11 @@ namespace WebApplication1
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+
+        void Application_BeginRequest(object sender, EventArgs e)
+        {
+            //let's call a method which can create a cache of the accept language header
+            Helpers.SetLanguageCache();
+        }
     }
 }
