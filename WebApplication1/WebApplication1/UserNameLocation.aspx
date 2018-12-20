@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserNameLocation.aspx.cs" Inherits="WebApplication1.UserNameLocation" %>
 
+<%@ Register src="UserControls/Header.ascx" tagname="Header" tagprefix="userControls" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -18,6 +20,11 @@
     <form defaultbutton="SubmitButton" id="form1" runat="server">
         <div>
             <table class="auto-style1">
+                <tr>
+                    <td colspan="2">
+                        <userControls:Header ID="Header1" runat="server" />
+                    </td>
+                </tr>
                 <tr>
                     <td class="auto-style2">First Name</td>
                     <td>
