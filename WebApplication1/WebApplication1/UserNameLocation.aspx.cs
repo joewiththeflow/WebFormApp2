@@ -16,10 +16,14 @@ namespace WebApplication1
 
         protected void SubmitButton_Click(object sender, EventArgs e)
         {
-            var fname = FirstNameTextBox.Text;
-            var lname = LastNameTextBox.Text;
-            var state = StatesDropDown.SelectedValue;
-            OutputLabel.Text = fname + " " + lname + " " + state;
+            Page.Validate();
+            if (Page.IsValid)
+            {
+                var fname = FirstNameTextBox.Text;
+                var lname = LastNameTextBox.Text;
+                var state = StatesDropDown.SelectedValue;
+                OutputLabel.Text = fname + " " + lname + " " + state;
+            }
         }
     }
 }
