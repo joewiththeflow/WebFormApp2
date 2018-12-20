@@ -11,7 +11,7 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            LastNameTextBox.Focus();
         }
 
         protected void SubmitButton_Click(object sender, EventArgs e)

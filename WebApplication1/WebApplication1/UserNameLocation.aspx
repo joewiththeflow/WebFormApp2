@@ -15,7 +15,7 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form defaultbutton="SubmitButton" id="form1" runat="server">
         <div>
             <table class="auto-style1">
                 <tr>
